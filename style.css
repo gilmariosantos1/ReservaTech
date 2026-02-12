@@ -20,11 +20,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height:50.5em;
+    max-height: 37.5em;
+    
 }
 
 .centro > img {
     max-width: 60%;
-    margin: auto 20px;
+    margin: 0px;
 }
 
 .button{
@@ -47,4 +50,34 @@ body {
 
 .button > a:hover {
     box-shadow: 3px 3px 10px #bfbbca;
+}
+
+.centro-cadastro {
+    margin-top: 50px;
+    margin-right:300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.centro-cadastro p {
+    color: white;
+    text-decoration: underline;
+}
+
+.centro-cadastro-button {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.centro-cadastro-button a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px;
+
 }
