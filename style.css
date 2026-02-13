@@ -35,6 +35,7 @@ body {
 .centro {
     background: linear-gradient( to right, #8056ff 50%,  #148875 50%);
     margin: 100px 50px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
