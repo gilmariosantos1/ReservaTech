@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Reserva.css'
 
-function Reserva() {
+const Reserva = () =>  {
 
     return (
         <>
