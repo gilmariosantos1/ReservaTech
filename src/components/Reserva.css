@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: blueviolet;
+    width: 100%;
+    max-width: 1200px;
+}
+main {
+    background-color: brown;
+}
