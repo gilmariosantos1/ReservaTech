@@ -5,7 +5,7 @@ const Home = () => {
     const navigate = useNavigate()
 
     const handleIniciar = () => {
-        navigate('/reserva')
+        navigate('/homemenu')
     }
 
     return (
