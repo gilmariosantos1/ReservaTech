@@ -1,154 +1,96 @@
-@charset "UTF-8";
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
+}
+
+.container {
+    /* background-color: blueviolet; */
     width: 100%;
+    max-width: 1200px;
     height: 100%;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    color: #000;
+    background-color: #D9D9D9;
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    max-height: 600px;
+    margin: 0px 10px;
+    border: 2px solid #8056FF;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
 }
 
-.nav-cad {
-    background-color: gray;
-    padding: 20px;
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.main-header img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.main-header h2 {
+    margin: 0;
+    line-height: 60px;
+}
+.main-header > div {
+    width: 40px;
 }
 
-.nav-cad button,
-.nav-cad a {
-    text-decoration: none;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.26);
-    padding: 15px;
-    border-radius: 10px;
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+.main-form-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-form-content-right,
+.main-form-content-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main-form-content-right {
+    align-items: end;
+    border-left: 1px solid #000;
+}
+
+.form-input input, .form-input select {
+    width: 100%;
+    max-width: 480px;
+    height: 74px;
+    border-radius: 31px;
     border: none;
-    cursor: pointer;
-    font-size: 16px;
+    box-shadow: 0px 4px 5px #929292;
+    padding: 0px 10px;
+}
+.form-input label {
+    margin-left: 10px;
 }
 
-.nav-cad button:hover,
-.nav-cad a:hover {
-    background-color: rgb(0, 0, 0);
-}
-
-.centro {
-    background: linear-gradient(to right, #8056ff 50%, #148875 50%);
-    margin: 100px 50px;
-    height: 900px;
+.main-form-submit {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-top: 10px;
 }
-
-.centro > img {
-    max-width: 60%;
-    margin: auto 20px;
-}
-
-.button {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.button > a {
-    align-self: center;
-    justify-items: center;
-    border-radius: 7px;
-    background: white;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: black;
-}
-
-.button > a:hover {
-    box-shadow: 3px 3px 10px #bfbbca;
-}
-
-.centro-cadastro {
-    margin-top: 50px;
-    margin-right: 300px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.centro-cadastro p {
+.main-form-submit button {
+    width: 100%;
+    max-width: 144px;
+    height: 60px;
+    background-color: #8056FF;
     color: white;
-    text-decoration: underline;
-}
-
-.centro-cadastro-button {
-    padding: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.centro-cadastro-button a:nth-last-child(1) {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 5px;
-}
-
-.centro-cadastro-button a:nth-last-child(2) {
-    text-decoration: none;
-    color: black;
-    padding: 10px 13px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 5px;
-}
-
-.centro-cadastro-button a:hover {
-    background-color: rgba(255, 255, 255, 0.63);
-}
-
-.centro-reserva {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.centro-reserva p {
-    color: white;
-    text-decoration: underline;
-}
-
-.centro-reserva-button {
-    padding: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.centro-reserva-button a:nth-last-child(1) {
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 5px;
-}
-
-.centro-reserva-button a:nth-last-child(2) {
-    text-decoration: none;
-    color: black;
-    padding: 10px 8px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 5px;
-}
-
-.centro-reserva-button a:hover {
-    background-color: rgba(255, 255, 255, 0.63);
+    font-size: 1.3em;
 }
