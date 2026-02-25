@@ -23,7 +23,7 @@ const HomeMenu = () => {
                         
                         <div className="centro-cadastro-button">
                             <a href="Colaborador">Cadastrar colaborador</a>
-                            <a href="#">Cadastrar equipamento</a>
+                            <a href="Equipamento">Cadastrar equipamento</a>
                         </div>
                     </div>
 
