@@ -5,7 +5,7 @@ const Colaborador = () => {
   const navigate = useNavigate();
 
   const handleBackToHome = () => {
-    navigate("/"); // Volta para a rota inicial (home)
+    navigate("/");
   };
 
   return (
@@ -20,18 +20,18 @@ const Colaborador = () => {
       <div className="form-container">
         <div className="column">
           <div className="field">
-            <label>Nome Completo</label>
-            <input type="text" placeholder="Digite seu nome completo" />
+            <label htmlFor="nome">Nome Completo</label>
+            <input id="nome" type="text" placeholder="Digite seu nome completo" />
           </div>
 
           <div className="field">
-            <label>Email</label>
-            <input type="email" placeholder="Digite seu email" />
+            <label htmlFor="email">Email</label>
+            <input id="email" type="email" placeholder="Digite seu email" />
           </div>
 
           <div className="field">
-            <label>Telefone</label>
-            <input type="tel" placeholder="(00) 00000-0000" />
+            <label htmlFor="telefone">Telefone</label>
+            <input id="telefone" type="tel" placeholder="(00) 00000-0000" />
           </div>
         </div>
 
@@ -39,18 +39,18 @@ const Colaborador = () => {
 
         <div className="column">
           <div className="field">
-            <label>CPF</label>
-            <input type="text" placeholder="000.000.000-00" />
+            <label htmlFor="cpf">CPF</label>
+            <input id="cpf" type="text" placeholder="000.000.000-00" />
           </div>
 
           <div className="field">
-            <label>Data de nascimento</label>
-            <input type="date" />
+            <label htmlFor="dataNascimento">Data de nascimento</label>
+            <input id="dataNascimento" type="date" placeholder="00/00/0000" />
           </div>
 
           <div className="field">
-            <label>Matrícula</label>
-            <input type="text" placeholder="Digite sua matricula" />
+            <label htmlFor="matricula">Matrícula</label>
+            <input id="matricula" type="text" placeholder="Digite sua matricula" />
           </div>
         </div>
       </div>
