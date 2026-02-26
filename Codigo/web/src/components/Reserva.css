@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.container {
+.reserva-container {
     /* background-color: blueviolet; */
     width: 100%;
     max-width: 1200px;
@@ -12,13 +12,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-main {
+.reserva-main {
     color: #000;
     background-color: #D9D9D9;
     width: 100%;
     max-width: 1140px;
     height: 100%;
-    max-height: 600px;
+    max-height: 620px;
     margin: 0px 10px;
     border: 2px solid #8056FF;
     display: flex;
@@ -26,49 +26,55 @@ main {
     padding: 0px 20px;
 }
 
-.main-header {
+.reserva-main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid black;
     margin-bottom: 20px;
 }
-.main-header img {
+.reserva-main-header a {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+.reserva-main-header img {
     width: 30px;
     height: 30px;
-    margin-left: 10px;
 }
-.main-header h2 {
+.reserva-main-header h2 {
     margin: 0;
     line-height: 60px;
 }
-.main-header > div {
+.reserva-main-header > div {
     width: 40px;
 }
 
-.form-input {
+.reserva-form-input {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 500px;
 }
-.main-form-content {
+.reserva-main-form-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.main-form-content-right,
-.main-form-content-left {
+.reserva-main-form-content-right,
+.reserva-main-form-content-left {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.main-form-content-right {
+.reserva-main-form-content-right {
     align-items: end;
     border-left: 1px solid #000;
+    margin-left: 5px;
+    padding-left: 5px;
 }
 
-.form-input input, .form-input select {
+.reserva-form-input input, .reserva-form-input select {
     width: 100%;
     max-width: 480px;
     height: 74px;
@@ -77,20 +83,54 @@ main {
     box-shadow: 0px 4px 5px #929292;
     padding: 0px 10px;
 }
-.form-input label {
+.reserva-form-input label {
     margin-left: 10px;
 }
 
-.main-form-submit {
+.reserva-main-form-submit {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-.main-form-submit button {
+.botao {
     width: 100%;
     max-width: 144px;
     height: 60px;
-    background-color: #8056FF;
+    background: linear-gradient(45deg, #7c4dff, #651fff);
     color: white;
     font-size: 1.3em;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 660px) {
+    .reserva-main-form-content {
+        flex-direction: column;
+    }
+    .reserva-main-form-content-right {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .reserva-form-input {
+        max-width: 480px;
+    }
+    .reserva-main-form-content-right, .reserva-main-form-content-left {
+        align-items: center;
+    }
+    .reserva-container {
+        height: auto;
+    }
+    .reserva-main {
+        max-height: 100%;
+        padding-bottom: 10px;
+        padding: 0px 5px 10px 5px;
+        margin: 0px;
+    }
+    #root div {
+        height: auto; !important
+    }
 }
