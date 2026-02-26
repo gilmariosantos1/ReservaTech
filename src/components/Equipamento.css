@@ -1,0 +1,104 @@
+ form {
+     max-width: 800px;
+     margin: auto;
+ }
+
+ label {
+     display: block;
+     margin-top: 10px;
+ }
+
+ input,
+ select,
+ textarea {
+     width: 150%;
+     padding: 15px;
+     margin-top: 1px;
+ }
+
+ button {
+     margin-top: 10px;
+     padding: 15px;
+     background-color: #2ea44f;
+     color: white;
+     border: none;
+     cursor: pointer;
+     display: block;
+     margin: auto;
+ }
+
+ body {
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #e6e6e6;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ .container {
+     width: 85%;
+     max-width: 1100px;
+     height: 80vh;
+     border: 2px solid #7c4dff;
+     padding: 30px;
+     box-sizing: border-box;
+ }
+
+ .topo span {
+     font-size: 28px;
+     cursor: pointer;
+ }
+
+ .topo h1 {
+     flex: 1;
+     text-align: center;
+     font-size: 28px;
+     font-weight: 500;
+     margin: 0;
+ }
+
+ .form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 40px;
+ }
+
+ label {
+     align-self: flex-start;
+     margin-left: 25%;
+     margin-bottom: 5px;
+     font-size: 18px;
+ }
+
+ input,
+ select {
+     width: 150%;
+     padding: 18px;
+     border: none;
+     border-radius: 30px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+     outline: none;
+     margin-bottom: 30px;
+     font-size: 16px;
+ }
+
+ button {
+     margin-top: 10px;
+     padding: 15px 40px;
+     border: none;
+     border-radius: 12px;
+     background: linear-gradient(45deg, #7c4dff, #651fff);
+     color: rgb(255, 255, 255);
+     font-size: 20px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+
+
+ button:hover {
+     opacity: 0.85;
+ }

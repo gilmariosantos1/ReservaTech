@@ -1,14 +1,16 @@
 @charset "UTF-8";
 
-* {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 body {
     width: 100%;
     height: 100%;
+
 }
 
 .nav-cad {
@@ -16,25 +18,22 @@ body {
     padding: 20px;
 }
 
-.nav-cad button,
-.nav-cad a {
+.nav-cad a{
     text-decoration: none;
     color: white;
     background-color: rgba(255, 255, 255, 0.26);
     padding: 15px;
     border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+
 }
 
-.nav-cad button:hover,
 .nav-cad a:hover {
     background-color: rgb(0, 0, 0);
 }
 
+
 .centro {
-    background: linear-gradient(to right, #8056ff 50%, #148875 50%);
+    background: linear-gradient( to right, #8056ff 50%,  #148875 50%);
     margin: 100px 50px;
     height: 900px;
     display: flex;
@@ -43,19 +42,21 @@ body {
     align-items: center;
 }
 
-.centro>img {
+.centro > img {
     max-width: 60%;
     margin: auto 20px;
 }
 
-.button {
+.button{
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    
 
-.button>a {
+}
+.button > a{
+
     align-self: center;
     justify-items: center;
     border-radius: 7px;
@@ -66,13 +67,14 @@ body {
     color: black;
 }
 
-.button>a:hover {
+.button > a:hover {
     box-shadow: 3px 3px 10px #bfbbca;
 }
 
+
 .centro-cadastro {
     margin-top: 50px;
-    margin-right: 300px;
+    margin-right:300px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -97,6 +99,7 @@ body {
     border-radius: 5px;
     background-color: white;
     margin: 5px;
+
 }
 
 .centro-cadastro-button a:nth-last-child(2) {
@@ -106,15 +109,7 @@ body {
     border-radius: 5px;
     background-color: white;
     margin: 5px;
-}
 
-.centro-cadastro-button a:nth-last-child(3) {
-    text-decoration: none;
-    color: black;
-    padding: 10px 13px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 5px;
 }
 
 .centro-cadastro-button a:hover {
@@ -122,7 +117,7 @@ body {
 }
 
 .centro-reserva {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -131,6 +126,7 @@ body {
 .centro-reserva p {
     color: white;
     text-decoration: underline;
+    
 }
 
 .centro-reserva-button {
@@ -147,6 +143,7 @@ body {
     border-radius: 5px;
     background-color: white;
     margin: 5px;
+
 }
 
 .centro-reserva-button a:nth-last-child(2) {
@@ -156,6 +153,7 @@ body {
     border-radius: 5px;
     background-color: white;
     margin: 5px;
+
 }
 
 .centro-reserva-button a:hover {
