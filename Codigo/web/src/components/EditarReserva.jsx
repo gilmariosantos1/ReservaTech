@@ -1,15 +1,22 @@
 import { useState } from 'react'
-import './Reserva.css' // Certifique-se de que o nome do arquivo CSS está correto
+import { useNavigate } from 'react-router-dom' // 1. Importando o useNavigate
+import './EditarReserva.css'
 
 const EditarReserva = () =>  {
+    const navigate = useNavigate(); // 2. Inicializando o hook de navegação
 
     return (
         <>
            <div className='container'>
                 <main>
                     <div className='main-header'>
-                        {/* Substitua o src pela rota correta da sua imagem de seta */}
-                        <img src="src/assets/imagens/arrow_left.png" alt="seta_voltar" />
+                            {/* 3. Adicionando o evento onClick e mudando o cursor */}
+                            <img 
+                                src="src/assets/imagens/arrow_left.png" 
+                                alt="seta_voltar" 
+                                onClick={() => navigate(-1)} 
+                                style={{ cursor: 'pointer' }} 
+                            />
                         <h2>Editar reserva</h2>
                         <div></div>
                     </div>
@@ -64,7 +71,7 @@ const EditarReserva = () =>  {
                             </div>
                         </form>
                     </div>
-                </main>
+                </main>           
            </div>
         </>
     )
