@@ -5,7 +5,8 @@ import Reserva from './components/Reserva'
 import Colaborador from './components/Colaborador'
 import HomeMenu from './components/HomeMenu'
 import Equipamento from './components/Equipamento'
-
+import EditarReserva from'./components/EditarReserva'
+import Reserva from './components/Reserva'
 function App() {
   return (
     <>    
@@ -14,6 +15,7 @@ function App() {
        
         <Route path="/" element={<Home />} />
         <Route path="/reserva" element={<Reserva />} />
+        <Route path="/EditarReserva"element={<EditarReserva/>}/>
         <Route path="/Colaborador" element={<Colaborador />} />
         <Route path="/Equipamento" element={<Equipamento />} />
         <Route path="/HomeMenu" element={<HomeMenu />} />
