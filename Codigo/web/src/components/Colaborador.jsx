@@ -1,10 +1,19 @@
 import "./Colaborador.css";
+import { useNavigate } from "react-router-dom";
 
 const Colaborador = () => {
+  const navigate = useNavigate();
+
+  const handleBackToHome = () => {
+    navigate("/"); // Volta para a rota inicial (home)
+  };
+
   return (
     <div className="container">
       <header className="header">
-        <button className="back-button">←</button>
+        <button className="back-button" onClick={handleBackToHome}>
+          ←
+        </button>
         <h1>Cadastro Colaborador</h1>
       </header>
 
@@ -41,7 +50,7 @@ const Colaborador = () => {
 
           <div className="field">
             <label>Matrícula</label>
-            <input type="text" placeholder="Digite sua matrícula" />
+            <input type="text" placeholder="Digite sua matricula" />
           </div>
         </div>
       </div>
@@ -49,6 +58,6 @@ const Colaborador = () => {
       <button className="submit-button">Cadastrar</button>
     </div>
   );
-}
+};
 
 export default Colaborador;
