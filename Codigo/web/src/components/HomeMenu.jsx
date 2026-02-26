@@ -13,23 +13,24 @@ const HomeMenu = () => {
             <nav className="nav-cad">
                 <button onClick={handleVoltar}>Voltar</button>
             </nav>
-            
+
             <div className="centro">
                 <img src="/Imagens/Design sem nome (10).png" alt="ReservaTech Logo" />
-                
+
                 <div className="button">
                     <div className="centro-cadastro">
                         <p>Cadastrar</p>
-                        
+
                         <div className="centro-cadastro-button">
                             <a href="Colaborador">Cadastrar colaborador</a>
                             <a href="Equipamento">Cadastrar equipamento</a>
+                            <a href="EditarEquipamento">Editar Equipamento</a>
                         </div>
                     </div>
 
                     <div className="centro-reserva">
                         <p>Reservas</p>
-                        
+
                         <div className="centro-reserva-button">
                             <a href="#">Reservar equipamento</a>
                             <a href="#">Consultar reservas</a>
