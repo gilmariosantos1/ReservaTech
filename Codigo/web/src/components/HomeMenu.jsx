@@ -33,6 +33,7 @@ const HomeMenu = () => {
                         <div className="centro-reserva-button">
                             <a href="reserva">Reservar equipamento</a>
                             <a href="#">Consultar reservas</a>
+                            <a href="EditarReserva">Editar reserva</a>
                         </div>
                     </div>
                 </div>
