@@ -32,7 +32,7 @@ const ConsultaReserva = () => {
                         <td>--/--/--</td>
                         <td>10:00</td>
                         <td>--:--</td>
-                        <td>187512567515</td>
+                        <td>1875454567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
                         <td class="editar-btn">*</td>
@@ -101,6 +101,17 @@ const ConsultaReserva = () => {
                         <td>187512567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
+                        <td class="editar-btn">*</td>
+                    </tr>
+                                        <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td class="editar-btn">*</td>
                     </tr>
                 </tbody>
