@@ -17,8 +17,7 @@ const Editareq = () => {
                 <label>Descrição:</label>
                 <select name="" id=""></select>
 
-                <button type="submit">editar</button>
-                <button type="submit">Cadastrar</button>
+                <button type="submit">Salvar</button>
             </form>
         </div>
     )
