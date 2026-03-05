@@ -1,23 +1,30 @@
-header {
+.consulta-reserva header {
     width: 100%;
     display: flex;
+    align-items: center;
     text-align: center;
     margin: 0px;
     margin-bottom: 5%;
     border-bottom: solid black 1px;
     padding-bottom: 2%;
 }
-header a{
+
+.consulta-reserva header a {
 
     margin: 0px;
 }
-header h2{
-    padding-left: 38%;    
+
+.consulta-reserva header h2 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
 }
-header a button{
+
+.consulta-reserva header a button {
     margin: 0px;
 }
-    table{
+
+.consulta-reserva table {
         width: 100%;
         border-collapse: collapse;
         background: #cfcfcf;
@@ -25,7 +32,8 @@ header a button{
         border-top: 1px solid #333;
     }
 
-    th, td{
+.consulta-reserva th,
+.consulta-reserva td {
         border-right: 1px solid #333;
         border-left: 1px solid #333;
         padding: 8px;
@@ -33,19 +41,20 @@ header a button{
         font-size: 14px;
     }
 
-    th{
+.consulta-reserva th {
         background: #bdbdbd;
         font-weight: bold;
     }
 
-    td{
+.consulta-reserva td {
         background: #d9d9d9;
     }
 
-    .editar-btn{
+.consulta-reserva .editar-btn {
         cursor: pointer;
         font-size: 18px;
     }
-    .editar-btn img{
+
+.consulta-reserva .editar-btn img {
         width: 30px;
     }
