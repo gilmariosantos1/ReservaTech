@@ -46,3 +46,6 @@ header a button{
         cursor: pointer;
         font-size: 18px;
     }
+    .editar-btn img{
+        width: 30px;
+    }

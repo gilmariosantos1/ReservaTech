@@ -35,7 +35,7 @@ const ConsultaReserva = () => {
                         <td>1875454567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
-                        <td class="editar-btn">*</td>
+                        <td class="editar-btn" ><img src="Imagens/editar.png" alt="Imagem" /></td>
                     </tr>
                     <tr>
                         <td>156827</td>
@@ -46,7 +46,7 @@ const ConsultaReserva = () => {
                         <td>187512567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
-                        <td class="editar-btn">*</td>
+                        <td class="editar-btn" ><img src="Imagens/editar.png" alt="Imagem" /></td>
                     </tr>
                     <tr>
                         <td>156827</td>
@@ -57,7 +57,7 @@ const ConsultaReserva = () => {
                         <td>187512567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
-                        <td class="editar-btn">*</td>
+                        <td class="editar-btn" ><img src="Imagens/editar.png" alt="Imagem" /></td>
                     </tr>
                     <tr>
                         <td>156827</td>
@@ -68,7 +68,7 @@ const ConsultaReserva = () => {
                         <td>187512567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
-                        <td class="editar-btn">*</td>
+                        <td class="editar-btn" ><img src="Imagens/editar.png" alt="Imagem" /></td>
                     </tr>
                     <tr>
                         <td>156827</td>
@@ -79,7 +79,7 @@ const ConsultaReserva = () => {
                         <td>187512567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
-                        <td class="editar-btn">*</td>
+                        <td class="editar-btn" ><img src="Imagens/editar.png" alt="Imagem" /></td>
                     </tr>
                     <tr>
                         <td>156827</td>
@@ -90,7 +90,7 @@ const ConsultaReserva = () => {
                         <td>187512567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
-                        <td class="editar-btn">*</td>
+                        <td class="editar-btn" ><img src="/Imagens/editar.png" alt="Imagem" /></td>
                     </tr>
                     <tr>
                         <td>156827</td>
@@ -101,18 +101,7 @@ const ConsultaReserva = () => {
                         <td>187512567515</td>
                         <td>Aula</td>
                         <td>Reservada</td>
-                        <td class="editar-btn">*</td>
-                    </tr>
-                                        <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="editar-btn">*</td>
+                        <td img class="editar-btn"><img src="/Imagens/editar.png" alt="Imagem" /></td>
                     </tr>
                 </tbody>
             </table>
