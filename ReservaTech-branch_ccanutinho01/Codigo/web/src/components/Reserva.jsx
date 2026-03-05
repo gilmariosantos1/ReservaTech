@@ -1,0 +1,81 @@
+import { useState } from 'react'
+import './Reserva.css'
+import Colaborador from './Colaborador.js';
+
+const Reserva = () =>  {
+    class Reserva {
+    constructor(equipamento, colaboradorId, dataInicio) {
+        this.equipamento = equipamento;
+        this.colaboradorId = colaboradorId; // Chave estrangeira
+        this.dataInicio = dataInicio;
+    }
+}
+
+    return (
+        <>
+           <div className='reserva-container'>
+                <main className='reserva-main'>
+                    <div className='reserva-main-header'>
+                        <a href="homemenu"><img src="src/assets/imagens/arrow_left.png" alt="seta_voltar" /></a>
+                        <h2>Reserva</h2>
+                        <div></div>
+                    </div>
+                    <div className='reserva-main-form'>
+                        <form action="" className='reserva-form'>
+                            <div className='reserva-main-form-content'>
+                                <div className='reserva-main-form-content-left'>
+                                    <div className='reserva-form-input'>
+                                        <label htmlFor="matricula">Matrícula do colaborador</label>
+                                        <input type="text" name='matricula' />
+                                    </div>
+                                    <div className='reserva-form-input'>
+                                        <label htmlFor="data-reserva">Data da reserva</label>
+                                        <input type="text" name='data-reserva' />
+                                    </div>
+                                    <div className='reserva-form-input'>
+                                        <label htmlFor="data-entrega">Data da entrega</label>
+                                        <input type="text" name='data-entrega' />
+                                    </div>
+                                    <div className='reserva-form-input'>
+                                        <label htmlFor="numero-serie">Número de série do equipamento</label>
+                                        <input type="text" name='numero-serie' />
+                                    </div>
+                                </div>
+                                <div className='reserva-main-form-content-right'>
+                                    <div className='reserva-form-input'>
+                                        <label htmlFor="motivo">Motivo</label>
+                                        <input type="text" name='motivo' />
+                                    </div>
+                                    <div className='reserva-form-input'>
+                                        <label htmlFor="horario-reserva">Horário da reserva</label>
+                                        <input type="text" name='horario-reserva' />
+                                    </div>
+                                    <div className='reserva-form-input'>
+                                        <label htmlFor="horario-entrega">Horário da entrega</label>
+                                        <input type="text" name='horario-entrega' />
+                                    </div>
+                                    <div className='reserva-form-input'>
+                                        <label htmlFor="status">Status:</label>
+                                        <select name="status" id="status">
+                                            <option value="">Selecione o status da reserva</option>
+                                            <option value="reservado">Reservado</option>
+                                            <option value="pendente">Pendente</option>
+                                            <option value="cancelado">Cancelado</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div className='main-form-submit'>
+                                <button  className="botao" type='submit'>Reservar</button>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+           </div>
+        </>
+    )
+
+}
+
+export default Reserva
