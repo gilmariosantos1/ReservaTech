@@ -6,6 +6,11 @@ const Equipamento = () =>  {
     return (
       
         <div className='container'>
+      <header class="header">
+        
+        <a href="HomeMenu"><button className="back-button">← </button></a>
+        <h1>Cadastro Equipamento</h1>
+      </header>
                
             <form >
                 <label>Nome:</label>
@@ -15,7 +20,8 @@ const Equipamento = () =>  {
                 <input type="text" name="serie" required/>
                 
                 <label>Descrição:</label>
-                <select name="" id=""></select>
+                 <input type="text" name="serie" required/>
+                
 
                 
 
