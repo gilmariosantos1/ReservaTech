@@ -1,9 +1,10 @@
 import { Router } from 'express';
 import * as controller from '../controllers/ReservaController.js';
-import { body } from 'express-validator';
+import validateRequest from '../middlewares/validateRequest.js'
+import { reservaValidators } from '../controllers/ReservaController.js';
 
 const router = Router();
 
-router.post('/', [
-    body('matricula').trim().isLength({ max: 6 })
-]);
+router.post('/reserva', reservaValidators.create, validateRequest, controller.create);
+
+export default router;
