@@ -5,6 +5,8 @@ import { reservaValidators } from '../controllers/ReservaController.js';
 
 const router = Router();
 
-router.post('/reserva', reservaValidators.create, validateRequest, controller.create);
+const reservaController = controller.createReservaController(reservaModel);
+
+router.post('/reserva', reservaValidators.create, validateRequest, reservaController.create);
 
 export default router;
