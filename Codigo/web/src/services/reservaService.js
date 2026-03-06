@@ -12,7 +12,8 @@ export const createReserva = (
   dataEntrega,
   horarioInicio,
   horarioFim,
-  motivo
+  motivo,
+  status
 ) =>
   api.post('/reservas', {
     equipamentoId,
@@ -20,7 +21,8 @@ export const createReserva = (
     dataEntrega,
     horarioInicio,
     horarioFim,
-    motivo
+    motivo,
+    status
   })
 
 export const updateReserva = (
@@ -30,7 +32,8 @@ export const updateReserva = (
   dataEntrega,
   horarioInicio,
   horarioFim,
-  motivo
+  motivo,
+  status
 ) =>
   api.put(`/reservas/${id}`, {
     equipamentoId,
@@ -38,7 +41,8 @@ export const updateReserva = (
     dataEntrega,
     horarioInicio,
     horarioFim,
-    motivo
+    motivo,
+    status
   })
 
 export const removeReserva = (id) =>

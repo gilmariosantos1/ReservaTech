@@ -30,6 +30,8 @@ export default class Reserva extends Model {
      
         motivo: { type: DataTypes.STRING, allowNull: false },
         
+        status: { type: DataTypes.STRING, allowNull: false },
+        
      
       },
       {
