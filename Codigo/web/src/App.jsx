@@ -5,19 +5,26 @@ import Reserva from './components/Reserva'
 import Colaborador from './components/Colaborador'
 import HomeMenu from './components/HomeMenu'
 import Equipamento from './components/Equipamento'
-import EditarReserva from'./components/EditarReserva'
+import EditarEquipamento from './components/EditarEquipamento'
+import ConsultarReserva from'./components/ConsultarReserva'
+
+
 function App() {
   return (
-    <>    
+    <>
 
       <Routes>
-       
+
+        <Route path="/ConsultaReserva" element={<ConsultaReserva />} />
         <Route path="/" element={<Home />} />
         <Route path="/Reserva" element={<Reserva />} />
         <Route path="/EditarReserva"element={<EditarReserva/>}/>
         <Route path="/Colaborador" element={<Colaborador />} />
         <Route path="/Equipamento" element={<Equipamento />} />
         <Route path="/HomeMenu" element={<HomeMenu />} />
+        <Route path="/EditarEquipamento" element={<EditarEquipamento />} />
+      </Routes>
+
 
       </Routes> 
     </>
