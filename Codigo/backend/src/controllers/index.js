@@ -1,27 +1,4 @@
-const {
-  createColaboradorController,
-  colaboradorValidators,
-} = require('./ColaboradorController');
-const {
-  createEquipamentoController,
-  equipamentoValidators,
-} = require('./EquipamentoController');
-const {
-  createReservaController,
-  reservaValidators,
-} = require('./ReservaController');
-const {
-  createAlunoController,
-  alunoValidators,
-} = require('./AlunoController');
-
-module.exports = {
-  createColaboradorController,
-  colaboradorValidators,
-  createEquipamentoController,
-  equipamentoValidators,
-  createReservaController,
-  reservaValidators,
-  createAlunoController,
-  alunoValidators,
-};
+export { createColaboradorController, colaboradorValidators } from './ColaboradorController.js';
+export { createEquipamentoController, equipamentoValidators } from './EquipamentoController.js';
+export { createReservaController, reservaValidators } from './ReservaController.js';
+export { createAlunoController, alunoValidators } from './AlunoController.js';

@@ -20,9 +20,10 @@ const Colaborador = () => {
   };
 
   async function onSubmit(e) {
+    
     e.preventDefault();
     try {
-      await createColaborador(colaborador);
+      await createColaborador(colaborador);      
       alert("Colaborador cadastrado com sucesso!");
       navigate("/HomeMenu");
     } catch (error) {

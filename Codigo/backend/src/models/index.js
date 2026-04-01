@@ -2,37 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import { Sequelize, DataTypes } from 'sequelize';
 import { fileURLToPath } from 'url';
-import configData from '../config/database.js';
+import sequelize from '../config/databaseMySQL.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const env = process.env.NODE_ENV || 'development';
-const config = configData[env] || configData.development;
-
 const db = {};
-
-let sequelize;
-
-// Prioridade: env vars > SQLite em memória > configuração de arquivo
-if (process.env.DB_DIALECT === 'sqlite') {
-    sequelize = new Sequelize({
-        dialect: 'sqlite',
-        storage: process.env.DB_STORAGE || './database.sqlite',
-        logging: false
-    });
-} else if (config && config.use_env_variable) {
-    sequelize = new Sequelize(process.env[config.use_env_variable], config);
-} else if (config) {
-    sequelize = new Sequelize(config.database || 'reservatech', config.username || 'root', config.password || '', config);
-} else {
-    // Fallback: SQLite local
-    sequelize = new Sequelize({
-        dialect: 'sqlite',
-        storage: './database.sqlite',
-        logging: false
-    });
-}
 
 // Carregar dinamicamente os modelos
 const modelDirs = [__dirname];

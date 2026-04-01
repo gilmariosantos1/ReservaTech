@@ -25,6 +25,13 @@
   }
 }
 
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -88,6 +95,7 @@
 
 .field input:focus {
   box-shadow: 0 0 0 3px rgba(124, 107, 255, 0.4);
+  outline: none;
 }
 
 .submit-button {
@@ -98,34 +106,21 @@
   background: #7c6bff;
   color: white;
   border: none;
-  border-radius: 12px;
-  font-size: 17px;
+  border-radius: 30px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
-@media (min-width: 768px) {
-  body, #root, #root > div {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
+.submit-button:hover {
+  background: #6b5ae0;
+}
 
-  .container {
-    padding: 40px 45px !important;
-    width: 90% !important;
-  }
-
-  .form-container {
-    flex-direction: row;
-    gap: 50px;
-  }
-
-  .divider {
-    width: 2px;
-    height: auto;
-    margin: 0;
-  }
-
-  .header h1 { font-size: 30px; }
+.error {
+  color: #d32f2f;
+  background: #ffebee;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }

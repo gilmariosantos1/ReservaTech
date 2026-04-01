@@ -1,7 +1,7 @@
 import { body, param } from 'express-validator';
 
 const cpfRegex = /^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$/;
-const phoneRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
+const phoneRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$|^(\d{10,11})$/;
 
 const colaboradorValidators = {
   id: [
@@ -108,10 +108,40 @@ function createColaboradorController(colaboradorModel) {
 
     async create(req, res, next) {
       try {
+        console.log('Dados recebidos:', req.body);
         const createdColaborador = await colaboradorModel.create(req.body);
         return res.status(201).json(createdColaborador);
       } catch (error) {
-        return next(error);
+        console.error('Erro ao criar colaborador:', error);
+
+        if (error.name === 'SequelizeUniqueConstraintError') {
+          const conflicts = error.errors.map((item) => ({
+            field: item.path,
+            message: item.message,
+            value: item.value,
+          }));
+          return res.status(409).json({
+            message: 'Já existe um colaborador com dados duplicados.',
+            errors: conflicts,
+          });
+        }
+
+        if (error.name === 'SequelizeValidationError') {
+          const errors = error.errors.map((item) => ({
+            field: item.path,
+            message: item.message,
+            value: item.value,
+          }));
+          return res.status(422).json({
+            message: 'Dados inválidos.',
+            errors,
+          });
+        }
+
+        return res.status(500).json({
+          message: 'Erro interno ao criar colaborador.',
+          details: error.message,
+        });
       }
     },
 

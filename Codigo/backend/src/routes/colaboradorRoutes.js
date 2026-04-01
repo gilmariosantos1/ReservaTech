@@ -1,10 +1,11 @@
 import { Router } from 'express';
 import { createColaboradorController, colaboradorValidators } from '../controllers/ColaboradorController.js';
 import validateRequest from '../middlewares/validateRequest.js';
+import db from '../models/index.js';
 
 const router = Router();
 
-const controllers = createColaboradorController();
+const controllers = createColaboradorController(db.Colaborador);
 
 router.get('/', controllers.list);
 
